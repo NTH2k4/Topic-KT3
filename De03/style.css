@@ -2,4 +2,99 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.list-item {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.list-item .price {
+    border: none;
+    background-color: orange;
+}
+
+.list-item .add-cart {
+    border: none;
+    background-color: rgb(28, 162, 28);
+}
+
+.list-item button {
+    padding: 7px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item > *{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cart {
+    /* border: 1px solid red; */
+    margin-top: 60px;
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table > tr, td, th {
+    border: 1px solid gray;
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.cart thead :nth-child(1){
+    width: 30%;
+}
+
+.cart thead :nth-child(2) {
+    width: 20%;
+}
+
+.cart thead :nth-child(3) {
+    width: 10%;
+}
+
+.cart thead :nth-child(4), .cart thead :nth-child(5) {
+    width: 20%;
+}
+
+.edit-item {
+    padding: 10px;
+}
+
+.edit-item button {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 157, 255, 0.994);
+    color: white;
+    border: none;
+}
+
+.edit-item input {
+    margin-right: 20px;
+}
+
+tbody tr:nth-child(2n + 1) {
+    background-color: #efefef;
 }
