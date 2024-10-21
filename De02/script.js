@@ -18,7 +18,7 @@ function addToCart(productName, price, imageUrl) {
         row.innerHTML = `
             <td>${productName}</td>
             <td>$${price}</td>
-            <td><img src="${imageUrl}" alt="${productName}" width="50px"></td>
+            <td><img src="${imageUrl}" alt="${productName}" width="100%"></td>
             <td class=edit-item>
                 <input type="number" value="1" min="1" class="quantity-input" onchange="updateTotalPrice(this, ${price})">
                 <button class="remove-btn"> x </button>
@@ -52,5 +52,5 @@ function totalPriceCart() {
         }
     });
     console.log(total);
-    document.querySelector('.total-price').innerText = `$${total}`;
+    document.querySelector('.total-price').innerText = `$${total/2}`;
 }
