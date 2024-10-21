@@ -5,7 +5,6 @@ function getNextFourImgWidth(direction) {
     const imgs = Array.from(imgSlide.children).filter(child => child.tagName === 'DIV'); // Lọc ra các thẻ div con
     const currentIndex = Math.round(scrollAmount / (imgs[0].offsetWidth + 2)); // Tính chỉ số hiện tại
     let totalWidth = 0;
-
     if (direction === 'left') {
         // Kiểm tra nếu cuộn trái khi đang ở 4 phần tử đầu
         if (currentIndex === 0) return 0;
