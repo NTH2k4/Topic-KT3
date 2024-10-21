@@ -44,7 +44,6 @@ function updateTotalPrice(input, price) {
 function totalPriceCart() {
     const tbody = document.querySelector('table tbody');
     let total = 0;
-
     Array.from(tbody.rows).forEach(row => {
         const totalPriceCell = row.querySelector('.sum-price');
         if (totalPriceCell) {
