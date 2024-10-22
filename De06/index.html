@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề 06</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Tìm kiếm">
+            <img src="img/search.png" alt="">
+        </div>
+        <div class="navbar">
+            <ul class="list1">
+                <li>HÀNG MỚI</li>
+                <li>NỮ</li>
+                <li>NAM</li>
+                <li>PHỤ KIỆN</li>
+                <li>EDITORIALS</li>
+                <li>HÈ UPTO 50%</li>
+                <li class="highlight-here">ĐÔNG UPTO 50%</li>
+            </ul>
+            <ul class="list2">
+                <li>TRA CỨU ĐƠN HÀNG</li>
+                <li class="highlight-here">BÒ SỮA XANH</li>
+                <li>GIỎ HÀNG</li>
+            </ul>
+        </div>
+        <div class="box-item">
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="first-column">Sản phẩm</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="first-column"><img src="img/item1.png" alt=""></div> COMBOTHOM - Áo size S</td>
+                            <td>549,000 VND</td>
+                            <td><input type="number" value="2" min="0" class="quantity" oninput="Valid()"></td>
+                            <td>1,098,000 VND</td>
+                            <td class="delete-item" onclick="delete_item(event)"><img src="img/delete.png" alt=""> Xóa sản phẩm</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><img src="img/item2.png" alt=""></div> Mũ snapfit kiểu dáng quân đội in graphic bút chì B5 BOSUA Xanh tím than Freesize</td>
+                            <td>245,000 VND</td>
+                            <td><input type="number" value="1" min="0" class="quantity" oninput="Valid()"></td>
+                            <td>245,000 VND</td>
+                            <td class="delete-item" onclick="delete_item(event)"><img src="img/delete.png" alt=""> Xóa sản phẩm</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Khối lượng: <strong>0 g</strong></td>
+                            <td colspan="2">Tổng cộng: <strong>1,343,000 đ</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <div class="button-foot">
+            <button class="buy-other">Mua thêm sản phẩm khác</button>
+            <button class="pay-to-win">Tiến hành thanh toán</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
