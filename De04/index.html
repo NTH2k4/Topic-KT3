@@ -3,11 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Đề 04</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <div class="path">
+            <span class="home">🏠</span>
+            <span>YaMe</span>
+            <span>/</span>
+            <span class="about-cart">Thông tin giỏ hàng của bạn</span>
+        </div>
+        <div class="container">
+            <div class="row-left">
+                <div class="title title-left">Chi tiết sản phẩm trong giỏ hàng</div>
+                <div class="list-item">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><img src="img/item1.png" alt=""></td>
+                                <td>
+                                    <p>Áo Thun Nam KiriMaru Basic TD E01</p>
+                                    <p>Trắng, M</p>
+                                </td>
+                                <td class="edt">
+                                    <p class="price-one">99,000*</p>
+                                    <div class="quantity">
+                                        <input type="number" value="1">
+                                        <button class="update" onclick="update()">Update</button>
+                                    </div>
+                                    <p class="sum-price">
+                                        <span>= đ </span>
+                                        <span class="sum">99,000</span>
+                                    </p>
+                                </td>
+                                <td> X </td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/item1.png" alt=""></td>
+                                <td>
+                                    <p>Áo Khoác Nam Ma Bư Thun ST35</p>
+                                    <p>Trắng, M</p>
+                                </td>
+                                <td class="edt">
+                                    <p class="price-one">285,000*</p>
+                                    <div class="quantity">
+                                        <input type="number" value="2">
+                                        <button class="update" onclick="update()">Update</button>
+                                    </div>
+                                    <p class="sum-price">
+                                        <span>= đ </span>
+                                        <span class="sum">570,000</span>
+                                    </p>
+                                </td>
+                                <td> X </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">
+                                    <span>Tổng cộng:  đ </span>
+                                    <span class="total-price">669,000</span>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="row-right">
+                <div class="title title-right">Thông tin người mua/nhận hàng</div>
+                <div class="about-customer">
+                    <h3 class="name">Tên</h3>
+                    <input type="text" placeholder="Tên người nhận">
+                    <h3 class="sdt">Số điện thoại liên lạc</h3>
+                    <input type="text" placeholder="Số điện thoại">
+                    <div class="list-choose">
+                        <span class="val1">
+                            <input type="radio">
+                            <span>Nhận hàng tại nhà/công ty/bưu điện</span>
+                        </span>
+                        <span class="val2">
+                            <input type="radio">
+                            <span>Nhận hàng tại cửa hàng YaMe gần nhất</span>
+                        </span>
+                    </div>
+                    <input type="text" placeholder="Địa chỉ nhận hàng">
+                    <h3 class="note">Ghi chú</h3>
+                    <textarea class="text-note" rows="5" cols="40"></textarea>
+                    <button class="order">Đặt hàng</button>
+                    <div class="divider"></div>
+                    <button class="continue-buy">Cần sản phẩm khác? Tiếp tục mua hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
