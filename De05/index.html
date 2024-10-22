@@ -3,11 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Đề 05</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <div class="navbar">
+            <ul>
+                <li>Trang chủ</li>
+                <div class="divider"></div>
+                <li class="highlight-here">
+                    <span>
+                        <img src="img/burger-bar.png" alt="">
+                        Danh mục
+                    </span>
+                </li>
+                <div class="divider"></div>
+                <li>Kiến thức</li>
+                <div class="divider"></div>
+                <li>Video</li>
+                <div class="divider"></div>
+                <li>Ảnh khách hàng</li>
+                <div class="divider"></div>
+                <li>Vì sao chọn chúng tôi</li>
+                <div class="divider"></div>
+                <li>Liên hệ</li>
+                <li class="cart">
+                    <img src="img/cart.png" alt="">
+                    <div class="text-cart">
+                        <p>Giỏ hàng</p>
+                        <p>38.680.000 đ</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="header-path">
+            <span>Trang chủ / </span>
+            <span>Giỏ hàng</span>
+        </div>
+        <div class="container-cart">
+            <h2 class="title-cart">Giỏ Hàng</h2>
+            <table class="list-item">
+                <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Tổng cộng</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="img-item"><img src="img/item.png" alt=""></td>
+                        <td class="name">Bộ Máy Tính PlayPC Ultimate 13H Coffee Lake (Card VGA GTX 1050 2Gb OC)</td>
+                        <td class="price">13.990.000 đ</td>
+                        <td class="quantity"><input type="number" value="1"></td>
+                        <td class="total">13.990.000 đ</td>
+                        <td class="edit">
+                            <img src="img/reload.png" alt="" onclick="reload()">
+                            <img src="img/cancel.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="img-item"><img src="img/item.png" alt=""></td>
+                        <td class="name">Bộ Máy Tính PlayPC Ultimate 24S Coffee Lake (Card VGA GTX 1060 6Gb)</td>
+                        <td class="price">24.690.000 đ</td>
+                        <td class="quantity"><input type="number" value="1"></td>
+                        <td class="total">24.690.000 đ</td>
+                        <td class="edit">
+                            <img src="img/reload.png" alt="" onclick="reload()">
+                            <img src="img/cancel.png" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">
+                            <button class="conti-buy">Tiếp tục mua hàng</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="total-price">
+                <p>Tổng cộng: 38.680.000 đ</p>
+                <div class="divider"></div>
+                <button class="btn-pay">Thanh toán</button>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

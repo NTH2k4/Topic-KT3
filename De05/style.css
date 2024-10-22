@@ -1,5 +1,143 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+.container-fluid {
+    max-width: 1280px;
+    margin: 30px auto;
+    /* border: 1px solid red; */
+    background-color: #f8f8f8;
+}
+
+.navbar ul {
+    display: flex;
+    /* border: 1px solid blue; */
+    background-color: #0572d1;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul li{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    flex: 1;
+    justify-content: center;
+    white-space: nowrap;
+    margin: 0 10px;
+}
+
+.navbar .cart {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    margin: 0px;
+    padding-right: 10px;
+}
+
+.divider {
+    border-left: 1px solid white;
+    transform: skew(160deg);
+}
+
+.highlight-here {
+    background-color: black;
+    transform: skew(160deg);
+    margin: 0px !important;
+}
+
+.highlight-here span {
+    transform: skew(-160deg);
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: skew(-160deg); */
+}
+
+.header-path {
+    margin-top: 10px;
+}
+
+.container-cart {
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.title-cart {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.list-item {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+    font-size: 18px;
+    text-align: left;
+}
+
+.list-item td, .list-item th{
+    border: 1px solid #dddddd;
+    padding: 20px;
+}
+
+.list-item .quantity input {
+    width: 50px;
+    height: 40px;
+}
+
+.list-item thead {
+    color: #787978;
+    font-weight: 700;
+}
+
+.list-item tbody tr{
+    height: 135px;
+}
+
+.list-item tfoot {
+    height: 70px;
+}
+
+.list-item tbody :nth-child(3){
+    font-weight: 700;
+    color: #787978;
+}
+
+.list-item tbody :nth-child(5){
+    font-weight: 800;
+    color: red;
+}
+
+.list-item tfoot button {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #00a41c;
+    border: none;
+}
+
+.total-price {
+    width: 30%;
+    padding: 20px;
+    font-size: 25px;
+    margin-left: auto;
+}
+
+.total-price .divider {
+    border: 1px solid #dddddd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.total-price .btn-pay {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #00a41c;
+    border: none;
 }
