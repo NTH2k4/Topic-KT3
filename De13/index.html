@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề 13</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row-left">
+            <div class="header">
+                <span class="filter">
+                    <svg class="mr-1" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.5 16H14.5C15.0523 16 15.5 16.4477 15.5 17C15.5 17.5128 15.114 17.9355 14.6166 17.9933L14.5 18H10.5C9.94772 18 9.5 17.5523 9.5 17C9.5 16.4872 9.88604 16.0645 10.3834 16.0067L10.5 16H14.5H10.5ZM8.5 11H16.5C17.0523 11 17.5 11.4477 17.5 12C17.5 12.5128 17.114 12.9355 16.6166 12.9933L16.5 13H8.5C7.94772 13 7.5 12.5523 7.5 12C7.5 11.4872 7.88604 11.0645 8.38338 11.0067L8.5 11H16.5H8.5ZM5.5 6H19.5C20.0523 6 20.5 6.44772 20.5 7C20.5 7.51284 20.114 7.93551 19.6166 7.99327L19.5 8H5.5C4.94772 8 4.5 7.55228 4.5 7C4.5 6.48716 4.88604 6.06449 5.38338 6.00673L5.5 6H19.5H5.5Z"
+                            fill="#090D14"></path>
+                    </svg>
+                    Bộ lọc tìm kiếm
+                </span>
+            </div>
+            <div class="divider"></div>
+            <div class="choose-price choose">
+                <div class="accordion-active">
+                    <span>Mức giá</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.20041 5.73966C3.48226 5.43613 3.95681 5.41856 4.26034 5.70041L8 9.22652L11.7397 5.70041C12.0432 5.41856 12.5177 5.43613 12.7996 5.73966C13.0815 6.0432 13.0639 6.51775 12.7603 6.7996L8.51034 10.7996C8.22258 11.0668 7.77743 11.0668 7.48967 10.7996L3.23966 6.7996C2.93613 6.51775 2.91856 6.0432 3.20041 5.73966Z"
+                            fill="#090D14"></path>
+                    </svg>
+                </div>
+                <div class="accordion-collapse">
+                    <ul class="flex-col">
+                        <li>
+                            <input type="checkbox" name="price-range"> Tất cả
+                        </li>
+                        <li>
+                            <input type="checkbox" name="price-range"> Từ 20 - 25 triệu
+                        </li>
+                        <li>
+                            <input type="checkbox" name="price-range"> Từ 25 - 30 triệu
+                        </li>
+                        <li>
+                            <input type="checkbox" name="price-range"> Trên 30 triệu
+                        </li>
+                    </ul>
+                </div>
+                <p class="title-price-range">Hoặc nhập khoảng giá phù hợp với bạn:</p>
+                <div class="text-price-range">
+                    <input type="text" class="range-min" value="22.900.000đ"> 
+                    ~
+                    <input type="text" class="range-max" value="102.500.000đ">
+                </div>
+                <div class="range-slider">
+                    <input type="range" id="range1" min="0" max="100" value="0" oninput="slideOne()" />
+                    <input type="range" id="range2" min="0" max="100" value="100" oninput="slideTwo()" />
+                    <div class="slider-track"></div>
+                    <div class="slider-range"></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="choose-ram choose">
+                <div class="accordion-active">
+                    <span>RAM</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.20041 5.73966C3.48226 5.43613 3.95681 5.41856 4.26034 5.70041L8 9.22652L11.7397 5.70041C12.0432 5.41856 12.5177 5.43613 12.7996 5.73966C13.0815 6.0432 13.0639 6.51775 12.7603 6.7996L8.51034 10.7996C8.22258 11.0668 7.77743 11.0668 7.48967 10.7996L3.23966 6.7996C2.93613 6.51775 2.91856 6.0432 3.20041 5.73966Z"
+                            fill="#090D14"></path>
+                    </svg>
+                </div>
+                <div class="accordion-collapse">
+                    <ul class="flex-col">
+                        <li>
+                            <input type="checkbox" name="val-ram"> Tất cả
+                        </li>
+                        <li>
+                            <input type="checkbox" name="val-ram"> 16GB
+                        </li>
+                        <li>
+                            <input type="checkbox" name="val-ram"> 8GB
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+            <div class="divider"></div>
+            <div class="choose-size-screen choose">
+                <div class="accordion-active">
+                    <span>Kích thước màn hình</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.20041 5.73966C3.48226 5.43613 3.95681 5.41856 4.26034 5.70041L8 9.22652L11.7397 5.70041C12.0432 5.41856 12.5177 5.43613 12.7996 5.73966C13.0815 6.0432 13.0639 6.51775 12.7603 6.7996L8.51034 10.7996C8.22258 11.0668 7.77743 11.0668 7.48967 10.7996L3.23966 6.7996C2.93613 6.51775 2.91856 6.0432 3.20041 5.73966Z"
+                            fill="#090D14"></path>
+                    </svg>
+                </div>
+                <div class="accordion-collapse">
+                    <ul class="flex-col">
+                        <li>
+                            <input type="checkbox" name="val-screen"> Tất cả
+                        </li>
+                        <li>
+                            <input type="checkbox" name="val-screen"> Dưới 14 inch
+                        </li>
+                        <li>
+                            <input type="checkbox" name="val-screen"> Từ 14 - 15 inch
+                        </li>
+                        <li>
+                            <input type="checkbox" name="val-screen"> Từ 15 - 17 inch
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row-right">
+            <div class="header-right">
+                <p class="result">Tìm thấy <strong>28</strong> kết quả</p>
+                <div class="sort">
+                    <span>Sắp xếp theo:</span>
+                    <select name="sort" id="sort">
+                        <option value="default">Nổi bật</option>
+                        <option value="price-asc">Giá thấp nhất</option>
+                        <option value="price-desc">Giá cao nhất</option>
+                        <option value="zero">Trả góp 0%</option>
+                    </select>
+                </div>
+            </div>
+            <div class="all-item">
+                <div class="item">
+                    <img src="img/mac1.jpg" alt="" class="img-item">
+                    <div class="line-tg">Trả góp 0%</div>
+                    <div class="real-price">
+                        <span class="value">27.990.000 đ</span>
+                        <!-- <span class="discount">-14%</span> -->
+                    </div>
+                    <p class="price">27.290.000 đ</p>
+                    <p class="price-discount">Giảm 700.000 đ</p>
+                    <p class="name">Macbook Air M3 13 2024 8CPU 8GPU/8GB/256GB</p>
+                    <ul class="color-wrap">
+                        <li class="color-gray-black"></li>
+                        <li class="color-gray-white"></li>
+                        <li class="color-gold"></li>
+                        <li class="color-gray"></li>
+                    </ul>
+                    <div class="divider"></div>
+                    <div class="icon-back">
+                        <img src="img/icon.png" alt="">
+                    </div>
+                    <p class="text1">Nhập mã FPTLAP giảm 5% tối đa 200.000đ</p>
+                    <div class="compare">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 10C6.5 9.72386 6.72386 9.5 7 9.5H10V6.5C10 6.22386 10.2239 6 10.5 6C10.7761 6 11 6.22386 11 6.5V9.5H14C14.2761 9.5 14.5 9.72386 14.5 10C14.5 10.2761 14.2761 10.5 14 10.5H11V13.5C11 13.7761 10.7761 14 10.5 14C10.2239 14 10 13.7761 10 13.5V10.5H7C6.72386 10.5 6.5 10.2761 6.5 10ZM10.5 18C14.9183 18 18.5 14.4183 18.5 10C18.5 5.58172 14.9183 2 10.5 2C6.08172 2 2.5 5.58172 2.5 10C2.5 14.4183 6.08172 18 10.5 18ZM10.5 17C6.63401 17 3.5 13.866 3.5 10C3.5 6.13401 6.63401 3 10.5 3C14.366 3 17.5 6.13401 17.5 10C17.5 13.866 14.366 17 10.5 17Z" fill="#0071e3"></path></svg>
+                        <span>So sánh</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/mac2.jpg" alt="" class="img-item">
+                    <div class="line-tg">Trả góp 0%</div>
+                    <div class="real-price">
+                        <span class="value">49.990.000 đ</span>
+                        <!-- <span class="discount">-14%</span> -->
+                    </div>
+                    <p class="price">49.490.000 đ</p>
+                    <p class="price-discount">Giảm 500.000 đ</p>
+                    <p class="name">Macbook Pro 14 2023 M3 Pro 11 CPU/14 GPU/18GB/512GB</p>
+                    <ul class="color-wrap">
+                        <li class="color-gray-black"></li>
+                        <li class="color-gray-white"></li>
+                    </ul>
+                    <div class="divider"></div>
+                    <div class="icon-back">
+                        <img src="img/icon.png" alt="">
+                    </div>
+                    <p class="text1">Nhập mã FPTLAP giảm 5% tối đa 200.000đ</p>
+                    <div class="compare">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 10C6.5 9.72386 6.72386 9.5 7 9.5H10V6.5C10 6.22386 10.2239 6 10.5 6C10.7761 6 11 6.22386 11 6.5V9.5H14C14.2761 9.5 14.5 9.72386 14.5 10C14.5 10.2761 14.2761 10.5 14 10.5H11V13.5C11 13.7761 10.7761 14 10.5 14C10.2239 14 10 13.7761 10 13.5V10.5H7C6.72386 10.5 6.5 10.2761 6.5 10ZM10.5 18C14.9183 18 18.5 14.4183 18.5 10C18.5 5.58172 14.9183 2 10.5 2C6.08172 2 2.5 5.58172 2.5 10C2.5 14.4183 6.08172 18 10.5 18ZM10.5 17C6.63401 17 3.5 13.866 3.5 10C3.5 6.13401 6.63401 3 10.5 3C14.366 3 17.5 6.13401 17.5 10C17.5 13.866 14.366 17 10.5 17Z" fill="#0071e3"></path></svg>
+                        <span>So sánh</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/mac3.jpg" alt="" class="img-item">
+                    <div class="line-tg">Trả góp 0%</div>
+                    <div class="real-price">
+                        <span class="value">32.890.000 đ</span>
+                        <span class="discount">-18%</span>
+                    </div>
+                    <p class="price">26.990.000 đ</p>
+                    <p class="price-discount">Giảm 5.900.000 đ</p>
+                    <p class="name">Máy tính xách tay Macbook Air 15 M2 2023 8CPU...</p>
+                    <ul class="color-wrap">
+                        <li class="color-gray-black"></li>
+                        <li class="color-gold"></li>
+                    </ul>
+                    <div class="divider"></div>
+                    <div class="icon-back">
+                        <img src="img/icon.png" alt="">
+                    </div>
+                    <p class="text1">Nhập mã FPTLAP giảm 5% tối đa 200.000đ</p>
+                    <div class="compare">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 10C6.5 9.72386 6.72386 9.5 7 9.5H10V6.5C10 6.22386 10.2239 6 10.5 6C10.7761 6 11 6.22386 11 6.5V9.5H14C14.2761 9.5 14.5 9.72386 14.5 10C14.5 10.2761 14.2761 10.5 14 10.5H11V13.5C11 13.7761 10.7761 14 10.5 14C10.2239 14 10 13.7761 10 13.5V10.5H7C6.72386 10.5 6.5 10.2761 6.5 10ZM10.5 18C14.9183 18 18.5 14.4183 18.5 10C18.5 5.58172 14.9183 2 10.5 2C6.08172 2 2.5 5.58172 2.5 10C2.5 14.4183 6.08172 18 10.5 18ZM10.5 17C6.63401 17 3.5 13.866 3.5 10C3.5 6.13401 6.63401 3 10.5 3C14.366 3 17.5 6.13401 17.5 10C17.5 13.866 14.366 17 10.5 17Z" fill="#0071e3"></path></svg>
+                        <span>So sánh</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/mac4.jpg" alt="" class="img-item">
+                    <div class="line-tg">Trả góp 0%</div>
+                    <div class="real-price">
+                        <span class="value">27.990.000 đ</span>
+                        <span class="discount">-15%</span>
+                    </div>
+                    <p class="price">23.790.000 đ</p>
+                    <p class="price-discount">Giảm 4.200.000 đ</p>
+                    <p class="name">Macbook Air M2 2022 13 inch</p>
+                    <ul class="color-wrap">
+                        <li class="color-gray"></li>
+                        <li class="color-gray-black"></li>
+                        <li class="color-gray-white"></li>
+                        <li class="color-gold"></li>
+                    </ul>
+                    <div class="divider"></div>
+                    <div class="icon-back">
+                        <img src="img/icon.png" alt="">
+                    </div>
+                    <p class="text1">Nhập mã FPTLAP giảm 5% tối đa 200.000đ</p>
+                    <div class="compare">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 10C6.5 9.72386 6.72386 9.5 7 9.5H10V6.5C10 6.22386 10.2239 6 10.5 6C10.7761 6 11 6.22386 11 6.5V9.5H14C14.2761 9.5 14.5 9.72386 14.5 10C14.5 10.2761 14.2761 10.5 14 10.5H11V13.5C11 13.7761 10.7761 14 10.5 14C10.2239 14 10 13.7761 10 13.5V10.5H7C6.72386 10.5 6.5 10.2761 6.5 10ZM10.5 18C14.9183 18 18.5 14.4183 18.5 10C18.5 5.58172 14.9183 2 10.5 2C6.08172 2 2.5 5.58172 2.5 10C2.5 14.4183 6.08172 18 10.5 18ZM10.5 17C6.63401 17 3.5 13.866 3.5 10C3.5 6.13401 6.63401 3 10.5 3C14.366 3 17.5 6.13401 17.5 10C17.5 13.866 14.366 17 10.5 17Z" fill="#0071e3"></path></svg>
+                        <span>So sánh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

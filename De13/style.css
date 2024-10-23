@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container-fluid {
+    display: flex;
+    gap: 20px;
+    max-width: 1280px;
+    padding: 15px;
+    /* border: 1px solid red; */
+    background-color: #f3f4f6;
+    margin: 30px auto;
+}
+
+.row-left {
+    width: 25%;
+    border-radius: 10px;
+    border: none;
+    /* border: 1px solid blue; */
+    background-color: white;
+}
+
+.row-right {
+    width: 80%;
+    /* border: 1px solid green; */
+}
+
+.header {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.divider {
+    border: 1px solid #f3f4f6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.choose-price {
+    margin: 10px 16px 20px 16px;
+}
+
+.accordion-active {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.accordion-collapse .flex-col {
+    list-style: none;
+}
+
+.flex-col > * {
+    margin-bottom: 10px;
+}
+
+.title-price-range {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.text-price-range {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.text-price-range input {
+    width: 45%;
+    height: 30px;
+    text-align: right;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    color: gray;
+}
+
+.range-slider {
+    width: 100%;
+    position: relative;
+    height: 6px;
+}
+
+.range-slider input[type="range"] {
+    position: absolute;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background: transparent;
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #374151;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.range-slider .slider-track {
+    position: absolute;
+    height: 6px;
+    background: #d3d3d3;
+    z-index: 1;
+}
+
+.range-slider .slider-range {
+    position: absolute;
+    height: 6px;
+    background: #374151;
+    z-index: 2;
+}
+
+.choose {
+    margin: 10px 16px 20px 16px;
+}
+
+.row-right .header-right {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.header-right select {
+    height: 30px;
+    width: 200px;
+    border-radius: 4px;
+}
+
+.sort span {
+    color: gray;
+    font-size: 14px;
+}
+
+.sort select{
+    border: 1px solid #e5e7eb;
+}
+
+.header-right {
+    margin-bottom: 8px;
+}
+
+.all-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.all-item .item {
+    /* border: 2px solid red; */
+    width: 25%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.all-item .item .img-item {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.all-item .item .line-tg {
+    background-color: rgb(229 231 235);
+    display: inline-block;
+    padding: 2px 8px 2px 8px;
+    border-radius: 1.5rem;
+    color: gray;
+}
+
+.real-price {
+    font-size: 14px;
+    height: 30px;
+    align-content: center;
+}
+
+.real-price .value {
+    text-decoration: line-through;
+}
+
+.real-price .discount {
+    color: red;
+}
+
+.item .price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.item .price-discount {
+    font-size: 14px;
+    color: #059669;
+    margin-bottom: 8px;
+}
+
+.item .name {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 34px;
+}
+
+.color-wrap {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 3px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.color-wrap li {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.color-gray {
+    background-color: rgb(102, 105, 110);
+}
+.color-gray-black {
+    background-color: rgb(49, 55, 69);
+}
+.color-gold {
+    background-color: rgb(242, 224, 202);
+}
+.color-gray-white {
+    background-color: rgb(190, 190, 192);
+}
+
+.item .text1 {
+    color: gray;
+    font-size: 14px;
+}
+
+.item .compare {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #0071e3;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
