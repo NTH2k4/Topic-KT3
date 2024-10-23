@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-fluid {
+    max-width: 1280px;
+    margin: 30px auto;
+    display: flex;
+    gap: 50px;
+}
+
+.row-left {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.item .img-item{
+    width: 170px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+}
+
+.item * {
+    margin: 5px;
+}
+
+.item button {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.row-right {
+    width: 50%;
+}
+
+.row-right .title {
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.item-cart {
+    text-align: center;
+}
+
+.cart-item table th:nth-child(1), table td:nth-child(1) {
+    text-align: left;
+}
+
+.item-cart .item-img {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+}
+
+.item-cart input {
+    width: 50px;
+    padding: 5px;
+}
+
+.item-cart .item-quantity input {
+    border: none;
+    background-color: transparent;
+}
+
+.item-cart .item-total-price {
+    padding: 5px;
+}
+
+.cart-item table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.cart-item table thead {
+    background-color: darkgray;
+}
+
+.cart-item table td, th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.remove-item {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+tfoot .total-price {
+    text-align: center;
+}
+
+.cart-item table tr:nth-child(odd):not(thead tr) {
+    background-color: #efefef;
+}
