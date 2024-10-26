@@ -2,7 +2,256 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container-fluid {
+    max-width: 1280px;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+    background-color: #f3f4f6;
+    padding: 10px;
+}
+
+.row-left {
+    width: 70%;
+}
+
+.select-all {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.delete {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.row-left input[type="checkbox"] {
+    accent-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.all-item {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.all-item .item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    align-items: center;
+    padding: 10px 10px 40px 20px;
+    gap: 10px;
+}
+
+.item .delete-item, .item .price, .item .quantity{
+    margin-left: auto;
+    padding: 10px;
+}
+
+.quantity .decrease:hover, .quantity .increase:hover {
+    cursor: pointer;
+    background-color: #f3f4f6;
+}
+
+.item .price {
+    text-align: right;
+}
+
+.item .price .special-price {
+    font-weight: 600;
+    color: red;
+    font-size: 15px;
+}
+
+.item .price .original-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: gray;
+}
+
+.item .image-item {
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    width: 90px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.item .info-item {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.item .info-item span {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.item .info-item select {
+    width: min-content;
+    background-color: #f3f4f6;
+    font-size: 15px;
+    border: none;
+    padding: 5px;
+}
+
+.item .quantity {
+    display: flex;
+}
+
+.quantity input, .quantity button {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    border: none;
+    border: 1px solid #d1d5db;
+    background-color: transparent;
+}
+
+.row-right {
+    width: 30%;
+}
+
+.row-right .gift {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.row-right .gift .watch-gift {
+    margin-left: auto;
+    color: gray;
+}
+
+.row-right .bill {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bill .select-offer {
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.bill .select-offer .arrow-right {
+    margin-left: auto;
+}
+
+.bill .select-offer svg {
+    fill: red;
+}
+
+.exchange-points {
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    padding: 10px;
+    color: gray;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.exchange-points .help {
+    fill: gray;
+}
+
+.order-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.divider {
+    border: 1px solid #d1d5db;
+}
+
+.divider-dash {
+    border: 1px dashed #d1d5db;
+}
+
+.order-info span {
+    font-size: 14px;
+}
+
+.order-info .value {
+    float: right;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.need-to-pay .value {
+    color: red;
+}
+
+.bonus-points {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.bonus-points .points {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.see-more {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #1250dc;
+    font-weight: 500;
+}
+
+.see-more svg {
+    fill: #1250dc;
+}
+
+.order-confi {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+button {
+    cursor: pointer;
+}
