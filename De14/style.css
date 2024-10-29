@@ -1,7 +1,106 @@
-* {
-    margin: 0;
+*{
     padding: 0;
-    box-sizing: border-box;
-    font-size: 18px;
+    margin: 0;
     list-style: none;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 30px auto;
+}
+
+.content1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.a{
+    display: flex;
+    gap: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.content2{
+    color: gray;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid #bebebe;
+    box-shadow: 0 5px 10px -2px lightgray;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    align-items: center;
+}
+#search{
+    border: 0;
+    font-style: italic;
+    padding-left: 4px;
+    padding-right: 100px;
+    background-color: #ededed;
+}
+.searchbox{
+    background-color: #ededed;
+    border-radius: 8px;
+    padding: 5px;
+}
+.content3{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.label4, .label3, .label1{
+    color: #bebebe;
+}
+#logo{
+    width: 80px;
+    /* object-fit: fill; */
+    margin-left: -150px;
+}
+#banner{
+    width: 100%;
+    /* object-fit: fill; */
+}
+#signin{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 180px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+.label2{
+    color: blue;
+}
+#logo{
+    display: flex;
+    justify-self: center;
+}
+.menu {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.offer {
+    color: red;
+}
+
+.a img {
+    width: 15px;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
 }

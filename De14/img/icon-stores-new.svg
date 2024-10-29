@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="18.98" viewBox="0 0 19 18.98">
+  <g id="map" transform="translate(-408 -552.025)">
+    <path id="Path_324" data-name="Path 324" d="M410.848,561.5h-.783L408.5,572.43l4.7-2.342,4.3,1.9,4.3-1.9,4.7,2.342-1.565-10.93h-.783" transform="translate(0 -1.924)" fill="none" stroke="#4c4c4c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <g id="pin" transform="translate(412.169 552.525)">
+      <path id="Path_325" data-name="Path 325" d="M423.834,557.856c0,3.847-5.331,9.208-5.331,9.208s-5.338-5.339-5.331-9.208a5.331,5.331,0,0,1,10.663,0Z" transform="translate(-413.171 -552.525)" fill="none" stroke="#4c4c4c" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_326" data-name="Path 326" d="M421.743,558.442a2.423,2.423,0,1,1-2.423-2.423A2.424,2.424,0,0,1,421.743,558.442Z" transform="translate(-413.988 -553.291)" fill="none" stroke="#4c4c4c" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
