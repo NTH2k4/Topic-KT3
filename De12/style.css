@@ -1,7 +1,183 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-size: 18px;
-    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.container-fluid {
+    margin: 30px auto;
+    max-width: 1280px;
+    display: flex;
+}
+
+.row-left {
+    width: 55%;
+    margin-right: 50px;
+}
+
+.row-right {
+    width: 45%;
+}
+
+.slide-item {
+    display: flex;
+    position: relative;
+    height: 300px;
+}
+
+.array {
+    position: absolute;
+    top: 45%;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    padding: 10px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+.imga {
+    margin: auto 0;
+    width: 300px;
+    height: 200px;
+}
+
+.array-left {
+    left: 0;
+}
+
+.array-right {
+    right: 0;
+}
+
+.check-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.check-img .quantity {
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.select-color {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+}
+
+.silver, .black {
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.black {
+    border: 1px solid black;
+}
+
+.icon-left {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    border: 1px solid lightgray;
+    text-align: center;
+    padding: 5px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.info-all {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.info-all p {
+    color: blue;
+}
+
+.name-item {
+    font-size: 25px;
+}
+
+.id-item {
+    color: gray;
+}
+
+.select-color-right {
+    display: flex;
+    position: relative;
+    margin: 20px 0px;
+}
+
+.select-color-right .color {
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.select-color-right .color span {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.select-color-right p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.divider {
+    border: 1px solid lightgray;
+}
+
+.about-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-discount {
+    border: 1px solid gold;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.km-noi-bat {
+    border: 2px solid red;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.uu-dai {
+    background-color: pink;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accept-now {
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.imga {
+    margin: auto;
 }
